@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}

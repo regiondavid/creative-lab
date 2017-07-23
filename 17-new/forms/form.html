@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <title>2017星辰工作室招新意向报名表</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta charset="utf-8">
+    <link href="http://lib.baomitu.com/materialize/0.99.0/css/materialize.min.css" rel="stylesheet">
+    <link href="http://lib.baomitu.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/forms.css">
+</head>
+<body>
+<p class="flow-text">2017星辰工作室招新意向报名表</p>
+<div class="row">
+    <form class="col s12" action="" method="POST">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">person</i>
+          <input id="name" type="text" class="validate" required="required">
+          <label for="name">姓名</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">assignment</i>
+          <select name="grade">
+            <option value="" disabled selected>选择你的年级</option>
+            <option value="2016级">2016级</option>
+            <option value="2017级">2017级</option>
+            <option value="其他">其他</option>
+          </select>
+          <label for="grade">年级</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">work</i>
+          <input id="xy" type="text" class="validate" required="required">
+          <label for="xy">学院</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">phone_iphone</i>
+          <input id="tel" type="number" class="validate" required="required">
+          <label for="tel" data-error="请输入正确的手机号">手机</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mail_outline</i>
+          <input id="email" type="email" class="validate" required="required">
+          <label for="email" data-error="邮箱格式不正确">邮箱</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">developer_board</i>
+          <select multiple id="dir" name="dir">
+            <option value="" disabled selected>选择你有意向报名的方向，可多选</option>
+            <option value="产品运营">产品运营</option>
+            <option value="设计">设计</option>
+            <option value="前端">前端</option>
+            <option value="后台">后台</option>
+            <option value="安卓">安卓</option>
+            <option value="DevOps">DevOps</option>
+          </select>
+          <label for="dir">意向方向</label>
+        </div>
+      </div>
+      <div class="row bt-row"><a class="btn waves-effect waves-light" type="submit" name="action" href="javascript:;">
+          提交
+          <i class="material-icons right">send</i>
+      </a></div>
+    </form>
+</div>
+    <script src="http://lib.baomitu.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://lib.baomitu.com/materialize/0.99.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select').material_select();
+            $('#tel').eq(0).on('blur',function() {
+                var telv = this.value;
+                var reg = /^1[3|4|5|7|8][0-9]{9}$/;
+                if (!reg.test(telv)){
+                    $("#tel").addClass("invalid");
+                    $("[for='tel']").eq(0).addClass("active");
+                }
+            });
+            $('a').eq(0).on('click', function() {
+                if($("valid").length == 0 && $("#name")[0].value && $("[name='grade']")[0].value && $("#xy")[0].value && $("#tel")[0].value && $("#email")[0].value && $(".select-dropdown")[2].value) {
+                    $("form")[0].submit();
+                } else alert("请正确填写信息后再提交");
+            })
+        });
+    </script>
+</body>
