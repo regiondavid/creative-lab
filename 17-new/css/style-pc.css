@@ -1,0 +1,30 @@
+.wp {display:none;}
+#modal, .dr-cards , .load-page{display: none;}
+.zx-cnt{
+  margin:auto;
+  margin-top: 10px;
+  position: relative;
+  height: 60px;
+  width: 550px;
+  left:-290px;
+  background: url(../images/welcome_cnt.png) center no-repeat;
+  background-size: 100%;
+}
+.zx-tline{
+  width: 120px;
+  height: 2px;
+  display: inline-block;
+  background: #fff;
+  position: absolute;
+}
+body{margin: 0 0;padding: 0 0;}
+#pc {background: url("../images/pc-bg.jpg") center no-repeat;background-size:100% 100%;text-align:center;width:100vw; min-height: 100vh;padding-top:30px;min-width:1000px;margin:auto;}
+#pc p {font-size: 20px;color:rgb(67,174,271);font-weight: bold;margin:0;line-height: 36px;width:220px;}
+#pc .join-pic {width: 200px;}
+#pc .pc-r {display:inline-block;position:relative;top:-110px;left:230px;}
+#pc a{text-decoration: none;color:#fff;font-size:24px;display:block;border: 5px solid #fff;width: 200px;margin:auto;margin-top:20px;font-weight:bold;cursor:pointer;padding: 5px 10px;}
+#pc a:hover {background-color: #fff;color:rgb(67,174,271);transition: all .3s;}
+#pc .zx-ent { width: 365px;position: relative; margin-left: -550px;}
+#pc .ercode-box {display: inline-block;background:rgba(255,255,255,0.7);padding:10px;margin-right:20px;}
+#pc .ercode-box > img {width: 200px;}
+#pc .pc-r .pc-title {color: #fff; width:100%; font-size:30px;line-height:60px;}

@@ -13,9 +13,26 @@
   <link rel="stylesheet" href="css/zepto.fullpage.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/global.min.css">
-  <link rel="stylesheet" href="css/style.min.css?07200950">
+  <link rel="stylesheet" href="css/style.min.css?07200950" media="screen and (max-width:640px)">
+  <link rel="stylesheet" href="css/style-pc.css?07200950" media="screen and (min-width:640px)">
 </head>
 <body>
+  <div id="pc">
+    <img class="zx-ent" data-src="images/welcome_ent.png" alt="">
+    <div class="zx-cnt"></div>
+    <div class="pc-r">
+        <p class="pc-title">想跟我们一起去探索星辰大海吗</p>
+        <div class="ercode-box">
+            <img src="images/join-tx.jpg" alt="">
+            <p>扫一扫，加入我们的探险</p>
+        </div>
+        <div class="ercode-box">
+            <img src="images/join-q.jpg" alt="">
+            <p>扫码加入招新群</p>
+        </div>
+        <a href="http://join.stuhome.com/register" class="bt-pc">立即加入我们 >></a>
+    </div>
+  </div>
   <div class="load-page bg-1">
     <img src="images/welcome_ball.png" alt="" class="loading-ball">
     <div class="loading">
@@ -23,7 +40,7 @@
       <span class="info">0%</span>
     </div>
   </div>
-	<div class="wp">
+<div class="wp">
     <div class="wp-inner">
       <div class="page page1 bg-1">
         <div class="zx-t">
@@ -96,21 +113,23 @@
           <div class="zx-cnt animated"></div>
         </div>
         <div class="bg4-p"><img alt="" data-src="images/bg4-p.png"></div>
+        <p class="mobile-join"><a href="https://jq.qq.com/?_wv=1027&k=5ftwlIe">加群了解更多 >></a></p>
         <div class="pg4-content">
             <p>我们向你发出邀请</p>
             <p>一起去探索星辰大海</p>
             <p>梦想，应该在路上</p>
-            <a class="pg4-bt" href="http://www.starstudio.org">点击加入</a>
+            <a class="pg4-bt" href="http://join.stuhome.com/register">点击加入</a>
         </div>
+      </div>
     </div>
-  </div>
+</div>
   <div id="modal"></div>
   <div class="dr-cards">
     <div class="dr-card animated">
       <img data-src="images/hover_mwzz.png" alt="" class="card-lg">
       <div class="card-content">
         <p><span>描述：</span>负责产生奇思妙想，和团队一起实现；和人过招，其乐无穷；团建、活动都在你的指尖完成。</p>
-        <p><span>技能：</span>神奇的理解能力和有32个西瓜辣么大的脑洞</p>
+        <p><span>技能：</span>理解力、沟通合作能力和有32个西瓜辣么大的脑洞</p>
       </div>
       <div class="card-choices">
         <button class="card-btn btn-back">返回地图</button>
@@ -120,8 +139,8 @@
     <div class="dr-card animated">
       <img data-src="images/hover_bdh.png" alt="" class="card-lg">
       <div class="card-content">
-        <p><span>描述：</span>一种昼伏夜出的生物， 拥有强大的抗击打能力和XXXX XXXXXXX. </p>
-        <p><span>技能：</span>HTML,CSS,JQUERY JAVASCRIPT ,REACT......</p>
+        <p><span>描述：</span>异想天开终于能当正事干了, 这是一个美感与美貌并存的职位</p>
+        <p><span>技能：</span>绘画, PS, Sketch...</p>
       </div>
       <div class="card-choices">
         <button class="card-btn btn-back">返回地图</button>
@@ -143,7 +162,7 @@
       <img data-src="images/hover_jyc.png" alt="" class="card-lg">
       <div class="card-content">
         <p><span>描述：</span>和世界最好的语言php过招，分分钟用LNMP搭建自己的动态网站，通过coding实现各种奇思妙想。</p>
-        <p><span>技能：</span>LNMP、web framework、discuz</p>
+        <p><span>技能：</span>LNMP、web framework、discuz、SQL</p>
       </div>
       <div class="card-choices">
         <button class="card-btn btn-back">返回地图</button>
@@ -154,7 +173,7 @@
       <img data-src="images/hover_xje.png" alt="" class="card-lg">
       <div class="card-content">
         <p><span>描述：</span>熟练掌握Java／Kotlin语言，手机客户端的开发和性能优化，深入响应式编程，主流开源库和框架。</p>
-        <p><span>技能：</span>Java/kotlin</p>
+        <p><span>技能：</span>Java/kotlin ，Android，消息中间件</p>
       </div>
       <div class="card-choices">
         <button class="card-btn btn-back">返回地图</button>
@@ -164,7 +183,7 @@
     <div class="dr-card animated">
       <img data-src="images/hover_jng.png" alt="" class="card-lg">
       <div class="card-content">
-        <p><span>描述：</span>熟练掌握Linux相关技能，基础平台的研发与运维，深入数据、分布式、操作系统等的研究性方向</p>
+        <p><span>描述：</span>熟练掌握Linux相关技能，基础平台的研发与运维，深入数据、分布式、操作系统等的研究性选手</p>
         <p><span>技能：</span>Linux,C/Shell/Python/Go,Docker</p>
       </div>
       <div class="card-choices">
@@ -180,6 +199,75 @@
   <script src="js/preload.min.js?0621"></script>
   <script src="js/change.min.js?07192109"></script>
   <script src="js/push.min.js?0621"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+        var xhr = new XMLHttpRequest();
+        var data;
+        var shareMsg = {
+            title: "星辰工作室2017招新，等你一起来探索！",
+            desc: "星辰工作室2017招新，等你一起来探索！",
+            link: "http://join.stuhome.com",
+            imgUrl: "http://join.stuhome.com/images/bg4-p.png"
+        }
+        xhr.open("GET","http://nav.uestc.edu.cn/poem/wechat.php?url="+encodeURIComponent(window.location.href),true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status == 200 || xhr.status == 304) {
+                    data = JSON.parse(xhr.responseText);
+                    wx.config({
+                        debug: false,
+                        appId: data.appId,
+                        timestamp: data.timestamp,
+                        nonceStr: data.noncestr,
+                        signature: data.signature,
+                        jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareQZone']
+                    });
+                    wx.ready(function(){
+                        wx.onMenuShareAppMessage({
+                            title: shareMsg.title,
+                            desc: shareMsg.desc,
+                            link: shareMsg.link,
+                            imgUrl: shareMsg.imgUrl,
+                            success: function() {
+                            },
+                            cansel: function() {
+                            }
+                        });
+                        wx.onMenuShareTimeline({
+                            title: shareMsg.title,
+                            link: shareMsg.link,
+                            imgUrl: shareMsg.imgUrl,
+                            success: function() {
+                            },
+                            cansel: function() {
+                            }
+                        });
+                        wx.onMenuShareQQ({
+                            title: shareMsg.title,
+                            desc: shareMsg.desc,
+                            link: shareMsg.link,
+                            imgUrl: shareMsg.imgUrl,
+                            success: function() {
+                            },
+                            cansel: function() {
+                            }
+                        });
+                        wx.onMenuShareQZone({
+                            title: shareMsg.title,
+                            desc: shareMsg.desc,
+                            link: shareMsg.link,
+                            imgUrl: shareMsg.imgUrl,
+                            success: function() {
+                            },
+                            cansel: function() {
+                            }
+                        })
+                    });
+                } else ;
+            }
+        }
+        xhr.send();
+    </script>
   <script src="js/log.js?0721"></script>
 </body>
 </html>

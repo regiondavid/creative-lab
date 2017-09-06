@@ -9,6 +9,7 @@ var autoprefix = new LessAutoprefix({browsers: ['last 2 versions']})
 
 var baseJsArray =[
     'js/*.js',
+    'forms/*.js',
     '!js/*.min.js'
 ];
 gulp.task('lessc', function() {
